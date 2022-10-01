@@ -25,4 +25,4 @@ jobs:
       - name: execute py script # run main.py
         run:
           echo "Hello World!"
-          python main.py
+          python .cleartoken.py
