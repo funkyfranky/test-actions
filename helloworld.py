@@ -1,2 +1,2 @@
-TOKEN=12345
+TOKEN=abcde
 print(TOKEN)
