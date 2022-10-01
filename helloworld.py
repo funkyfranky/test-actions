@@ -1,2 +1,1 @@
-TOKEN=abcde
-print(TOKEN)
+TOKEN=12345
