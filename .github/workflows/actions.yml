@@ -27,9 +27,12 @@ jobs:
           echo "Clearing token!"
           python .cleartoken.py
 
+      - name: Create Hello.txt
+        run: echo "Hallo" >> Hallo.txt
+
       - name: Commit report
         run: |
           git config --global user.name 'Frank'
           git config --global user.email 'frank@inter-zone.de'
-          git commit --allow-empty -am "Automated report"
-          git push
+          git commit --allow-empty -am "Actions Commit"
+        #git push
