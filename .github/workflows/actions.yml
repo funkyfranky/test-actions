@@ -30,6 +30,13 @@ jobs:
       - name: Create Hello.txt
         run: echo "Hallo" >> Hallo.txt
 
+      - name: Say Commit Head
+        run: |
+          echo $COMMIT
+          echo "$COMMIT"
+        env:
+          COMMIT: ${{ github.event.head_commit.message }}
+
       - name: Commit report
         run: |
           git add *
