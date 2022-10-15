@@ -31,5 +31,5 @@ jobs:
         run: |
           git config --global user.name 'Frank'
           git config --global user.email 'frank@inter-zone.de'
-          git commit -am "Automated report"
+          git commit --allow-empty -am "Automated report"
           git push
