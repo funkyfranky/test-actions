@@ -35,5 +35,7 @@ jobs:
           git add *
           git config --global user.name 'Frank'
           git config --global user.email 'frank@inter-zone.de'
-          git commit --allow-empty -am "Actions Commit"
+          git commit --allow-empty -am "Actions Commit %COMMIT"
           git push
+        env: 
+          COMMIT: ${{ github.event.head_commit.message }}
