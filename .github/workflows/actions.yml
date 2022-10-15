@@ -35,4 +35,4 @@ jobs:
           git config --global user.name 'Frank'
           git config --global user.email 'frank@inter-zone.de'
           git commit --allow-empty -am "Actions Commit"
-        #git push
+          git push
